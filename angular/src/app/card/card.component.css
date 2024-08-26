@@ -1,0 +1,24 @@
+.card-container{
+    width: auto;
+    border-radius: 8px;
+    -webkit-border-radius: -1px 2px 15px -4px rgba(0,0,0,0.75);
+    box-shadow: -1px 2px 15px -4px rgba(0,0,0,0.75);
+    margin: 20px auto;
+    padding: 20px;
+ 
+}
+
+img{
+    border-radius: 5px;
+}
+
+.card-container:hover{
+    border: 1px solid black;
+    
+}
+.Video-title{
+    
+    font-style: oblique;
+    font-weight: 200;
+}
+

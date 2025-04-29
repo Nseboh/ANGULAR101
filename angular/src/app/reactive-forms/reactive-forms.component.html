@@ -1,0 +1,57 @@
+<!-- <p>reactive-forms works!</p>
+<label for="number">Enter a number</label>
+<input type="text" class="form-control" [formControl]="number">
+<button class="btn btn-secondary" (click)="updateNumber()">Update</button>
+
+<form [formGroup]="userForm">
+  <label for="firstName">Enter your First name</label>
+  <input type="text" class="form-control" formControlName="firstName" required>
+
+  <label for="lastName">Enter your last name</label>
+  <input type="text" class="form-contol" formControlName="lastName" required="">
+
+  <button class="btn btn-secondary" (click)="updateNumber()" [disabled]="!userForm.valid">Update</button>
+
+</form> -->
+<form [formGroup]="userForm">
+  <label for="firstName">Enter your First name</label>
+  <input type="text" class="form-control" formControlName="firstName">
+
+  <label for="lastName">Enter your last name</label>
+  <input type="text" class="form-control" formControlName="lastName">
+
+  <label for="age">Age:</label>
+  <input type="number" class="form-control" formControlName="age">
+
+  <!-- Email -->
+  <div>
+    <label for="email">Email: </label>
+    <input type="email" class="form-control" formControlName="email">
+  </div>
+  <!-- Password -->
+  <div>
+    <label for="password">Password: </label>
+    <input type="password" class="form-control" formControlName="password" >
+  </div>
+  <!-- Confirm Password -->
+  <div>
+    <label for="confirmPassword">Confirm Password: </label>
+    <input type="password"  class="form-control" formControlName="confirmPassword" >
+  </div>
+  <!-- Number -->
+  <div>
+    <label for="number">Number: </label>
+    <input type="text"  class="form-control" formControlName="number" >
+  </div>
+
+  <!-- Reason for Registering -->
+  <div>
+    <label for="reasonForRegistering">Reason For Registering: </label>
+    <Textarea  type="text" id="reasonForRegistering" class="form-control" formControlName="reasonForRegistering"></Textarea>
+
+  </div>
+  <!-- Submit button -->
+   <div class="col align-self-end">
+    <button type="submit" class="btn btn-secondary" (click)="updateNumber()" [disabled]="userForm.invalid" >Submit</button>
+   </div>
+</form>

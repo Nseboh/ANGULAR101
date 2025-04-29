@@ -1,0 +1,26 @@
+.display
+{
+  height:3rem;
+  width:100%;
+  background-color: white;
+  border-radius: 5px;
+  margin: 1rem;
+  margin-bottom: 1rem;
+}
+.hovs{
+  height: 4rem;
+  transition: all 0.2s  ease-in-out;
+  display: grid;
+  place-items: center;
+}
+.hovs:hover{
+  background-color: rgba(211, 211, 211, 0.486);
+  font-size: 30px;
+
+}
+#disp{
+ display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  font-size: 25px;
+}

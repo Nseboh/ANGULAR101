@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-8 border bg-light shadow-sm" style="border-radius: 5px;">
+      <h1>My calculator App using DI</h1>
+      <div class="container mb-2">
+        <!-- Display -->
+        <div class="display border " id="disp">
+
+        </div>
+        @if (result){
+
+          <div class="result">{{result}}</div>
+        }
+        <!-- Top row -->
+        <div class="row text-center">
+          <div class="col-3 border hovs " (click)="getWhatIsClicked(7)"><span>7</span></div>
+          <div class="col-3 border hovs " (click)="getWhatIsClicked(8)"><span>8</span></div>
+          <div class="col-3 border hovs " (click)="getWhatIsClicked(9)"><span>9</span></div>
+          <div class="col-3 border hovs " (click)="getWhatIsClicked('+')"><span>+</span></div>
+        </div>
+        <!-- Second row -->
+        <div class="row text-center">
+          <div class="col-3 border hovs " (click)="getWhatIsClicked(4)"><span>4</span></div>
+          <div class="col-3 border hovs " (click)="getWhatIsClicked(5)"><span>5</span></div>
+          <div class="col-3 border hovs " (click)="getWhatIsClicked(6)"><span>6</span></div>
+          <div class="col-3 border hovs " (click)="getWhatIsClicked('-')"><span>-</span></div>
+        </div>
+        <!-- third row -->
+        <div class="row text-center">
+          <div class="col-3 border hovs " (click)="getWhatIsClicked(1)"><span>1</span></div>
+          <div class="col-3 border hovs " (click)="getWhatIsClicked(2)"><span>2</span></div>
+          <div class="col-3 border hovs " (click)="getWhatIsClicked(3)"><span>3</span></div>
+          <div class="col-3 border hovs " (click)="getWhatIsClicked('*')"><span>*</span></div>
+        </div>
+        <!-- Last row -->
+        <div class="row text-center">
+          <div class="col-3 border hovs "  style="background:rgb(179, 1, 1);"><span>Clr</span></div>
+          <div class="col-3 border hovs " (click)="getWhatIsClicked(0)"><span>0</span></div>
+          <div class="col-3 border hovs " (click)="getWhatIsClicked('=')"><span>=</span></div>
+          <div class="col-3 border hovs " (click)="getWhatIsClicked('/')"><span>/</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

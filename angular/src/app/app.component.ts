@@ -4,6 +4,11 @@ import { RouterOutlet } from '@angular/router';
 import { FirstComponentComponent } from './first-component/first-component.component';
 import { CardComponent } from "./card/card.component";
 import { NgModule } from '@angular/core';
+import { TestComponent } from './test/test.component';
+import { FormComponent } from './form/form.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { CalculatorComponent } from "./calculator/calculator.component";
+import { LoginComponent } from './login/login.component';
  interface dummyData{
   image: string;
   title: string;
@@ -13,7 +18,7 @@ import { NgModule } from '@angular/core';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, FirstComponentComponent, CardComponent, ],
+  imports: [RouterOutlet, CommonModule, FirstComponentComponent, CardComponent, TestComponent, FormComponent, ReactiveFormsComponent, CalculatorComponent, LoginComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
